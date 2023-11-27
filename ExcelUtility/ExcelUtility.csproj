@@ -15,7 +15,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ExcelExtension\ExcelBuilder.csproj" />
-    <ProjectReference Include="..\Samer.ExcelBuilder\Samer.ExcelBuilder.csproj" />
+    <ProjectReference Include="..\Samer.ExcelBuilder\GoWorkPro.ExcelBuilder.csproj" />
   </ItemGroup>
 
   <ItemGroup>

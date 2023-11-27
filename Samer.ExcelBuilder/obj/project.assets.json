@@ -4759,11 +4759,11 @@
     "C:\\Users\\samer.shahbaz\\.nuget\\packages\\": {}
   },
   "project": {
-    "version": "1.0.2",
+    "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\samer.shahbaz\\source\\repos\\ExcelUtility\\Samer.ExcelBuilder\\Samer.ExcelBuilder.csproj",
-      "projectName": "Samer.ExcelBuilder",
-      "projectPath": "C:\\Users\\samer.shahbaz\\source\\repos\\ExcelUtility\\Samer.ExcelBuilder\\Samer.ExcelBuilder.csproj",
+      "projectUniqueName": "C:\\Users\\samer.shahbaz\\source\\repos\\ExcelUtility\\Samer.ExcelBuilder\\GoWorkPro.ExcelBuilder.csproj",
+      "projectName": "GoWorkPro.ExcelBuilder",
+      "projectPath": "C:\\Users\\samer.shahbaz\\source\\repos\\ExcelUtility\\Samer.ExcelBuilder\\GoWorkPro.ExcelBuilder.csproj",
       "packagesPath": "C:\\Users\\samer.shahbaz\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\samer.shahbaz\\source\\repos\\ExcelUtility\\Samer.ExcelBuilder\\obj\\",
       "projectStyle": "PackageReference",

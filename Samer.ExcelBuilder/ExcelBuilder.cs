@@ -4,15 +4,16 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
-using static Samer.ExcelBuilder.ExcelTable;
+using static GoWorkPro.ExcelBuilder.ExcelTable;
 
-namespace Samer.ExcelBuilder
+namespace GoWorkPro.ExcelBuilder
 {
     /// <summary>
     /// <author>Samer Shahbaz</author>
     /// <createDate>06/11/2023</createDate>
     /// <changes-lies>Sprint 35</changes-lies>
     /// <description>This utlitiy is developed on the top of ClosedXML.Excel Package. It is an excel wrapper used to develope "Excel Sheets" easily rather than having deep understanding of ClosedXML.Excel.</description>
+    /// <contactus-email>extentions@goworkpro.com</contactus-email>
     /// </summary>
     public class ExcelBuilder : IDisposable, IExcelExtractor, IExcelBuilder
     {

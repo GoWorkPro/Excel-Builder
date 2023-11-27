@@ -2042,17 +2042,17 @@
           "bin/placeholder/ExcelBuilder.dll": {}
         }
       },
-      "Samer.ExcelBuilder/1.0.2": {
+      "GoWorkPro.ExcelBuilder/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
           "ClosedXML": "0.102.1"
         },
         "compile": {
-          "bin/placeholder/Samer.ExcelBuilder.dll": {}
+          "bin/placeholder/GoWorkPro.ExcelBuilder.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Samer.ExcelBuilder.dll": {}
+          "bin/placeholder/GoWorkPro.ExcelBuilder.dll": {}
         }
       }
     }
@@ -6218,19 +6218,19 @@
       "path": "../ExcelExtension/ExcelBuilder.csproj",
       "msbuildProject": "../ExcelExtension/ExcelBuilder.csproj"
     },
-    "Samer.ExcelBuilder/1.0.2": {
+    "GoWorkPro.ExcelBuilder/1.0.0": {
       "type": "project",
-      "path": "../Samer.ExcelBuilder/Samer.ExcelBuilder.csproj",
-      "msbuildProject": "../Samer.ExcelBuilder/Samer.ExcelBuilder.csproj"
+      "path": "../Samer.ExcelBuilder/GoWorkPro.ExcelBuilder.csproj",
+      "msbuildProject": "../Samer.ExcelBuilder/GoWorkPro.ExcelBuilder.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
       "Accord.MachineLearning >= 3.8.2-alpha",
       "ExcelBuilder >= 1.0.0",
+      "GoWorkPro.ExcelBuilder >= 1.0.0",
       "Microsoft.ML >= 2.0.1",
-      "Samer.CsvBuilder >= 1.0.0",
-      "Samer.ExcelBuilder >= 1.0.2"
+      "Samer.CsvBuilder >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -6263,8 +6263,8 @@
             "C:\\Users\\samer.shahbaz\\source\\repos\\ExcelUtility\\ExcelExtension\\ExcelBuilder.csproj": {
               "projectPath": "C:\\Users\\samer.shahbaz\\source\\repos\\ExcelUtility\\ExcelExtension\\ExcelBuilder.csproj"
             },
-            "C:\\Users\\samer.shahbaz\\source\\repos\\ExcelUtility\\Samer.ExcelBuilder\\Samer.ExcelBuilder.csproj": {
-              "projectPath": "C:\\Users\\samer.shahbaz\\source\\repos\\ExcelUtility\\Samer.ExcelBuilder\\Samer.ExcelBuilder.csproj"
+            "C:\\Users\\samer.shahbaz\\source\\repos\\ExcelUtility\\Samer.ExcelBuilder\\GoWorkPro.ExcelBuilder.csproj": {
+              "projectPath": "C:\\Users\\samer.shahbaz\\source\\repos\\ExcelUtility\\Samer.ExcelBuilder\\GoWorkPro.ExcelBuilder.csproj"
             }
           }
         }

@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExcelBuilder", "ExcelExtens
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GoWorkPro.CsvBuilder", "Samer.CsvBuilder\GoWorkPro.CsvBuilder.csproj", "{8F936E83-AC40-4CB8-BD07-9254EA415302}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Samer.ExcelBuilder", "Samer.ExcelBuilder\Samer.ExcelBuilder.csproj", "{FD06D736-C45E-4A77-B318-EA7B61DF7810}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GoWorkPro.ExcelBuilder", "Samer.ExcelBuilder\GoWorkPro.ExcelBuilder.csproj", "{FD06D736-C45E-4A77-B318-EA7B61DF7810}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

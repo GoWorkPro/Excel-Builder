@@ -60,9 +60,12 @@ csvExtractor.SaveAsFile("output.csv");
 csvBuilder.Dispose();
 This utility simplifies the process of CSV generation, providing users with a flexible and efficient solution for working with tabular data in the .NET environment.</Description>
     <Copyright>CsvBuilder Utility © 2023 Samer Shahbaz. All rights reserved.</Copyright>
-    <PackageIcon>8242984.png</PackageIcon>
+    <PackageIcon>favicon-3.png</PackageIcon>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <Version>1.0.0</Version>
+    <PackageProjectUrl>https://extentions.goworkpro.com/csv-builder</PackageProjectUrl>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/GoWorkPro/CSV-Builder.git</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>
@@ -70,7 +73,7 @@ This utility simplifies the process of CSV generation, providing users with a fl
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>
-    <None Include="..\..\..\..\Downloads\8242984.png">
+    <None Include="..\..\..\..\Downloads\favicon-1,favicon-2,favicon-3\favicon-3.png">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>
