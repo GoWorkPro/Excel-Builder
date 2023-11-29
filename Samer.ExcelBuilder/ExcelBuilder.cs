@@ -17,6 +17,7 @@ namespace GoWorkPro.ExcelBuilder
     /// </summary>
     public class ExcelBuilder : IDisposable, IExcelExtractor, IExcelBuilder
     {
+
         public XLWorkbook Workbook { get; }
         public Worksheet[] Worksheets { get; }
         private ExcelBuilder(params Worksheet[] worksheets)
