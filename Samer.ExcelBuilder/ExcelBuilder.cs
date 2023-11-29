@@ -64,6 +64,7 @@ namespace GoWorkPro.ExcelBuilder
                 //wast 400
                 foreach (var table in builderworksheet.Tables)
                 {
+                    table.IsBuild = true;
                     //added rows + column's row
                     var totalRows = table.Rows.Count + 1;
 
@@ -326,9 +327,10 @@ namespace GoWorkPro.ExcelBuilder
                 Workbook.Dispose();
         }
 
-        void _throwTablesNullException()
+        internal static void _checkAndThrowException(bool isBuild, string propertyName)
         {
-            throw new Exception("At least one table required to build excel.");
+            if (!isBuild)
+                throw new Exception($"ExcelTable's {propertyName} can not be called before Build() Method.");
         }
     }
 
@@ -348,7 +350,7 @@ namespace GoWorkPro.ExcelBuilder
             get;
             set;
         } = new List<double>();
-        public void UpdateColumnWidths(IXLWorksheet xLWorksheet)
+        internal void UpdateColumnWidths(IXLWorksheet xLWorksheet)
         {
             for (var i = 0; i < ColumnsWidth.Count; i++)
             {
@@ -370,24 +372,30 @@ namespace GoWorkPro.ExcelBuilder
         }
         public bool AlignTableEnd { get; set; }
         public int EmptyRowsBeforePresentation { get; set; }
-        public List<ExcelColumn> Columns { get; set; }
+        public List<ExcelColumn> Columns { get; internal set; }
         public List<ExcelRow> Rows { get; set; }
         public int MaxCellsCount { get => this.Rows.OrderByDescending(x => x.Cells.Count).Select(x => x.Cells.Count).FirstOrDefault(); }
         public int StartColumnNumber { get; internal set; }
         public int LastColumnNumber { get; internal set; }
-        internal int StartingRowNumber { get; set; }
-        internal int LastRowNumber { get; set; }
+        public int StartingRowNumber { get; internal set; }
+        public int LastRowNumber { get; internal set; }
         public ExcelTable? LinkedTable { get; set; }
-
+        internal bool IsBuild;
         public ExcelColumn? GetColumn(string columnName)
         {
+            _checkAndThrowException(nameof(GetColumn));
             return this.Columns.FirstOrDefault(x => x.ColumnName == columnName || x.ActualName == columnName);
         }
         public ExcelColumn? GetColumn(int columnNumber)
         {
+            _checkAndThrowException(nameof(GetColumn));
             return this.Columns.FirstOrDefault(x => x.ColumnNumber == columnNumber);
         }
 
+        private void _checkAndThrowException(string propertyName)
+        {
+            ExcelBuilder._checkAndThrowException(this.IsBuild, propertyName); 
+        }
 
         public void Link(ExcelTable linkTable)
         {

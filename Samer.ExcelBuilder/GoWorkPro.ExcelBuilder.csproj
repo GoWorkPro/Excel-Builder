@@ -6,21 +6,24 @@
     <Nullable>enable</Nullable>
     <Title>Excel Builder</Title>
     <Company>GoWorkPro</Company>
-    <Description>An exceptionally user-friendly tool for effortlessly building Excel sheets. Streamlining the process with simplicity and ease of use, ExcelBuilder empowers users to create professional-grade spreadsheets without the complexity.</Description>
+    <Description>An exceptionally user-friendly tool for effortlessly building Excel sheets. Streamlining the process with simplicity and ease of use, ExcelBuilder empowers users to create professional-grade spreadsheets without the complexity.
+
+For more information refere to documentation at 
+https://goworkpro.github.io/Excel-Builder-Utility/</Description>
     <Copyright>© 2023 GoWorkPro. All rights reserved. ExcelBuilder is a trademark of GoWorkPro. Unauthorized use or reproduction of this software is prohibited.</Copyright>
-    <PackageIcon>favicon-3.png</PackageIcon>
+    <PackageIcon>excel-icon.png</PackageIcon>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageTags>Excel, ClosedXML, Spreadsheet, Utility, C#, .NET, ExcelBuilder, Excel Sheets, Data Management</PackageTags>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <Version>1.0.0</Version>
+    <Version>1.1.1</Version>
     <Authors>Samer Shahbaz</Authors>
     <RepositoryUrl>https://github.com/GoWorkPro/Excel-Builder.git</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
-    <PackageProjectUrl>https://extentions.goworkpro.com/excel-builder</PackageProjectUrl>
+    <PackageProjectUrl>https://goworkpro.github.io/Excel-Builder-Utility/</PackageProjectUrl>
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="..\..\..\..\Downloads\favicon-1,favicon-2,favicon-3\favicon-3.png">
+    <None Include="..\..\..\..\Downloads\excel-icon.png">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>
