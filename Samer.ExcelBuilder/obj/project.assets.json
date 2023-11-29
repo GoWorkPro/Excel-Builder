@@ -4759,7 +4759,7 @@
     "C:\\Users\\samer.shahbaz\\.nuget\\packages\\": {}
   },
   "project": {
-    "version": "1.0.0",
+    "version": "1.1.1",
     "restore": {
       "projectUniqueName": "C:\\Users\\samer.shahbaz\\source\\repos\\ExcelUtility\\Samer.ExcelBuilder\\GoWorkPro.ExcelBuilder.csproj",
       "projectName": "GoWorkPro.ExcelBuilder",

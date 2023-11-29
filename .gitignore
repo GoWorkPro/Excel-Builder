@@ -1,0 +1,8 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/Samer.ExcelBuilder/bin/Release/GoWorkPro.ExcelBuilder.1.1.1.nupkg
+/Samer.ExcelBuilder/obj/GoWorkPro.ExcelBuilder.csproj.nuget.dgspec.json
+/Samer.ExcelBuilder/obj
+/Samer.ExcelBuilder/bin
