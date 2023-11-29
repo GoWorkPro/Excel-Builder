@@ -4,6 +4,6 @@
 
 /Samer.ExcelBuilder/bin/Release/GoWorkPro.ExcelBuilder.1.1.1.nupkg
 /Samer.ExcelBuilder/obj/GoWorkPro.ExcelBuilder.csproj.nuget.dgspec.json
-/Samer.ExcelBuilder/obj
-/Samer.ExcelBuilder/bin
-/.vs
+/Samer.ExcelBuilder/obj/
+/Samer.ExcelBuilder/bin/
+/.vs/
