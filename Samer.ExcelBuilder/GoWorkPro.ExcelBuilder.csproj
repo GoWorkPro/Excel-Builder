@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net5.0</TargetFramework>
+    <TargetFramework>netstandard2.1</TargetFramework>
     <ImplicitUsings>disable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <Title>Excel Builder</Title>
@@ -15,7 +15,7 @@ https://goworkpro.github.io/Excel-Builder-Utility/</Description>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageTags>Excel, ClosedXML, Spreadsheet, Utility, C#, .NET, ExcelBuilder, Excel Sheets, Data Management</PackageTags>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <Version>1.1.1</Version>
+    <Version>1.2.0</Version>
     <Authors>Samer Shahbaz</Authors>
     <RepositoryUrl>https://github.com/GoWorkPro/Excel-Builder.git</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
