@@ -8,7 +8,7 @@
     ".NETCoreApp,Version=v6.0": {
       "ConsoleApp1/1.0.0": {
         "dependencies": {
-          "GoWorkPro.ExcelBuilder": "2.0.0"
+          "GoWorkPro.ExcelBuilder": "2.0.1"
         },
         "runtime": {
           "ConsoleApp1.dll": {}
@@ -760,7 +760,7 @@
           }
         }
       },
-      "GoWorkPro.ExcelBuilder/2.0.0": {
+      "GoWorkPro.ExcelBuilder/2.0.1": {
         "dependencies": {
           "ClosedXML": "0.102.1"
         },
@@ -1336,7 +1336,7 @@
       "path": "xlparser/1.5.2",
       "hashPath": "xlparser.1.5.2.nupkg.sha512"
     },
-    "GoWorkPro.ExcelBuilder/2.0.0": {
+    "GoWorkPro.ExcelBuilder/2.0.1": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
