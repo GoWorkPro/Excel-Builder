@@ -13,7 +13,7 @@ namespace GoWorkPro.ExcelBuilder
         MemoryStream GetStream();
         IDisposable SaveAsFile(string filePath);
         Worksheet GetFirstWorksheet();
-        Worksheet? GetWorksheet(string name);
+        Worksheet GetWorksheet(string name);
         XLWorkbook Workbook { get; }
         Worksheet[] Worksheets { get; }
     }
