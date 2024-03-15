@@ -1,4 +1,5 @@
 ﻿using ClosedXML.Excel;
+using DocumentFormat.OpenXml.Spreadsheet;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -13,11 +14,10 @@ namespace GoWorkPro.ExcelBuilder
     /// <createDate>06/11/2023</createDate>
     /// <changes-lies>Sprint 35</changes-lies>
     /// <description>This utlitiy is developed on the top of ClosedXML.Excel Package. It is an excel wrapper used to develope "Excel Sheets" easily rather than having deep understanding of ClosedXML.Excel.</description>
-    /// <contactus-email>extentions@goworkpro.com</contactus-email>
+    /// <contactus-email>info@goworkpro.com</contactus-email>
     /// </summary>
     public class ExcelBuilder : IDisposable, IExcelExtractor, IExcelBuilder
     {
-
         public XLWorkbook Workbook { get; }
         public Worksheet[] Worksheets { get; }
         private ExcelBuilder(params Worksheet[] worksheets)
@@ -222,7 +222,7 @@ namespace GoWorkPro.ExcelBuilder
         void _parseHtmlInValue(IXLCell targetCell, string sourceValue)
         {
             var supportedHtmlCharacters = new string[] { "<b>", "<u>", "<i>", "<br />", "<br/>", "<br>" };
-            
+
 
             if (supportedHtmlCharacters.Any(character => sourceValue.Contains(character)))
             {
@@ -270,11 +270,11 @@ namespace GoWorkPro.ExcelBuilder
             else
             {
                 // If none of the supported HTML characters found, add the text as it is
-                targetCell.Value =  sourceValue;
+                targetCell.Value = sourceValue;
             }
         }
 
-        public Worksheet? GetWorksheet(string name)
+        public Worksheet GetWorksheet(string name)
         {
             return Worksheets.FirstOrDefault(x => x.Name == name);
         }
@@ -387,15 +387,19 @@ namespace GoWorkPro.ExcelBuilder
             _checkAndThrowException(nameof(GetColumn));
             return this.Columns.FirstOrDefault(x => x.ColumnName == columnName || x.ActualName == columnName);
         }
-        public ExcelColumn? GetColumn(int columnNumber)
+
+
+        public ExcelColumn GetColumn(int columnNumber)
         {
             _checkAndThrowException(nameof(GetColumn));
             return this.Columns.FirstOrDefault(x => x.ColumnNumber == columnNumber);
         }
 
+
+
         private void _checkAndThrowException(string propertyName)
         {
-            ExcelBuilder._checkAndThrowException(this.IsBuild, propertyName); 
+            ExcelBuilder._checkAndThrowException(this.IsBuild, propertyName);
         }
 
         public void Link(ExcelTable linkTable)
@@ -687,7 +691,18 @@ namespace GoWorkPro.ExcelBuilder
                 {
                     row.AddCell();
                 }
+        }
 
+
+        public static void AddCell(this ExcelRow row, ExcelCell cell)
+        {
+            row.Cells.Add(cell);
+
+            if (cell.CellStyle.AddCellsToSpan)
+                for (int i = 0; i < cell.CellStyle.Colspan - 1; i++)
+                {
+                    row.AddCell();
+                }
         }
 
         public static string[] Values(this ExcelRow excelRow) => excelRow.Cells.Select(x => x.Value).ToArray();
@@ -699,10 +714,7 @@ namespace GoWorkPro.ExcelBuilder
 
         public static void AddCell(this ExcelRow row, string value = "")
         {
-            row.Cells.Add(new ExcelCell
-            {
-                Value = value
-            });
+            AddCell(row, value, new ExcelTable.CellStyle());
         }
 
         public static ExcelRow Add(this ICollection<ExcelTable.ExcelRow> rows, params string[] cellsValue)
@@ -742,86 +754,55 @@ namespace GoWorkPro.ExcelBuilder
 
         public static ExcelRow Add(this ICollection<ExcelTable.ExcelRow> rows, RowStyle rowStyle, params string[] cellsValue)
         {
-            var rowCells = new List<ExcelTable.ExcelCell>();
-            foreach (var value in cellsValue)
-            {
-                rowCells.Add(new ExcelCell
-                {
-                    Value = value
-                });
-            }
-
             var row = new ExcelRow
             {
-                Cells = rowCells,
                 RowStyle = rowStyle
             };
+            foreach (var value in cellsValue)
+            {
+                AddCell(row, value);
+            }
+
             rows.Add(row);
             return row;
         }
 
         public static ExcelRow Add(this ICollection<ExcelTable.ExcelRow> rows, ExcelTable.CellStyle cellStyle, params string[] cellsValue)
         {
-            var rowCells = new List<ExcelTable.ExcelCell>();
+            var row = new ExcelRow();
             foreach (var value in cellsValue)
             {
-                rowCells.Add(new ExcelCell
-                {
-                    Value = value,
-                    CellStyle = cellStyle
-                });
+                AddCell(row, value, cellStyle);
             }
-
-            var row = new ExcelRow
-            {
-                Cells = rowCells
-            };
             rows.Add(row);
             return row;
         }
-
 
         public static ExcelRow Add(this ICollection<ExcelTable.ExcelRow> rows, ExcelTable.RowStyle rowStyle, ExcelTable.CellStyle cellStyle, params string[] cellsValue)
         {
-            var rowCells = new List<ExcelTable.ExcelCell>();
-            foreach (var value in cellsValue)
+            var row = Add(rows, cellStyle, cellsValue);
+            row.RowStyle = rowStyle;
+            return row;
+        }
+
+        public static ExcelRow Add(this ICollection<ExcelRow> rows, params ExcelCell[] excelCells)
+        {
+            var row = new ExcelRow();
+            foreach (var cell in excelCells)
             {
-                rowCells.Add(new ExcelCell
-                {
-                    Value = value,
-                    CellStyle = cellStyle
-                });
+                AddCell(row, cell);
             }
 
-            var row = new ExcelRow
-            {
-                Cells = rowCells,
-                RowStyle = rowStyle
-            };
             rows.Add(row);
             return row;
         }
 
-
-
-
-        public static void Add(this ICollection<ExcelRow> rows, params ExcelCell[] excelCells)
+        public static ExcelRow Add(this ICollection<ExcelRow> rows, ExcelTable.RowStyle rowStyle, params ExcelCell[] excelCells)
         {
-            rows.Add(new ExcelRow
-            {
-                Cells = excelCells.ToList(),
-            });
+            var row = Add(rows, excelCells);
+            row.RowStyle = rowStyle;
+            return row;
         }
-
-        public static void Add(this ICollection<ExcelRow> rows, ExcelTable.RowStyle rowStyle, params ExcelCell[] excelCells)
-        {
-            rows.Add(new ExcelRow
-            {
-                Cells = excelCells.ToList(),
-                RowStyle = rowStyle
-            });
-        }
-
 
         public static void AddRange(this ICollection<ExcelTable.ExcelCell> cells, ExcelTable.CellStyle cellStyle, params string[] cellsValue)
         {
@@ -832,6 +813,12 @@ namespace GoWorkPro.ExcelBuilder
                     Value = value,
                     CellStyle = cellStyle
                 });
+
+                if (cellStyle.AddCellsToSpan)
+                    for (int i = 0; i < cellStyle.Colspan - 1; i++)
+                    {
+                        cells.Add(new ExcelCell() { CellStyle = cellStyle });
+                    }
             }
         }
 

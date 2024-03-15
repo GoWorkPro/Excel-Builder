@@ -1,43 +1,52 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>net5.0</TargetFramework>
-    <ImplicitUsings>disable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-    <Title>Excel Builder</Title>
-    <Company>GoWorkPro</Company>
-    <Description>An exceptionally user-friendly tool for effortlessly building Excel sheets. Streamlining the process with simplicity and ease of use, ExcelBuilder empowers users to create professional-grade spreadsheets without the complexity.
+	<PropertyGroup>
 
-For more information refere to documentation at 
-https://goworkpro.github.io/Excel-Builder-Utility/</Description>
-    <Copyright>© 2023 GoWorkPro. All rights reserved. ExcelBuilder is a trademark of GoWorkPro. Unauthorized use or reproduction of this software is prohibited.</Copyright>
-    <PackageIcon>excel-icon.png</PackageIcon>
-    <PackageReadmeFile>README.md</PackageReadmeFile>
-    <PackageTags>Excel, ClosedXML, Spreadsheet, Utility, C#, .NET, ExcelBuilder, Excel Sheets, Data Management</PackageTags>
-    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <Version>1.1.1</Version>
-    <Authors>Samer Shahbaz</Authors>
-    <RepositoryUrl>https://github.com/GoWorkPro/Excel-Builder.git</RepositoryUrl>
-    <RepositoryType>git</RepositoryType>
-    <PackageProjectUrl>https://goworkpro.github.io/Excel-Builder-Utility/</PackageProjectUrl>
-  </PropertyGroup>
+		<TargetFrameworks>netstandard2.1;net5;net6</TargetFrameworks>
+		<ImplicitUsings>disable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<Title>Excel Builder</Title>
+		<Company>GoWorkPro</Company>
+		<Description>
+			An exceptionally user-friendly tool for effortlessly building Excel sheets. Streamlining the process with simplicity and ease of use, ExcelBuilder empowers users to create professional-grade spreadsheets without the complexity.
 
-  <ItemGroup>
-    <None Include="..\..\..\..\Downloads\excel-icon.png">
-      <Pack>True</Pack>
-      <PackagePath>\</PackagePath>
-    </None>
-  </ItemGroup>
+			For more information refere to documentation at
+			https://goworkpro.github.io/Excel-Builder-Utility/
+		</Description>
+		<Copyright>© 2023 GoWorkPro. All rights reserved. ExcelBuilder is a trademark of GoWorkPro. Unauthorized use or reproduction of this software is prohibited.</Copyright>
+		<PackageIcon>excel-icon.png</PackageIcon>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<PackageTags>Excel, ClosedXML, Spreadsheet, Utility, C#, .NET, ExcelBuilder, Excel Sheets, Data Management</PackageTags>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<Version>2.0.1</Version>
+		<Authors>Samer Shahbaz</Authors>
+		<RepositoryUrl>https://github.com/GoWorkPro/Excel-Builder.git</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+		<PackageProjectUrl>https://goworkpro.github.io/Excel-Builder-Utility/</PackageProjectUrl>
+		<PackageReleaseNotes>Fixes the Colspan related bugs</PackageReleaseNotes>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="ClosedXML" Version="0.102.1" />
-  </ItemGroup>
+	<ItemGroup>
+		<None Include="..\..\..\..\Desktop\README.md">
+		  <Pack>True</Pack>
+		  <PackagePath>\</PackagePath>
+		</None>
+		<None Include="..\..\..\..\Downloads\excel-icon.png">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+	</ItemGroup>
 
-  <ItemGroup>
-    <None Update="README.md">
-      <Pack>True</Pack>
-      <PackagePath>\</PackagePath>
-    </None>
-  </ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="ClosedXML" Version="0.102.1" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Update="README.md">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+	</ItemGroup>
 
 </Project>
