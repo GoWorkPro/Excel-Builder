@@ -1,35 +1,35 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\faisal\\source\\repos\\Excel-Builder\\ConsoleApp1\\ConsoleApp1.csproj": {}
+    "C:\\Users\\samer.shahbaz\\source\\repos\\ExcelUtility\\ConsoleApp1\\ConsoleApp1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\faisal\\source\\repos\\Excel-Builder\\ConsoleApp1\\ConsoleApp1.csproj": {
+    "C:\\Users\\samer.shahbaz\\source\\repos\\ExcelUtility\\ConsoleApp1\\ConsoleApp1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\faisal\\source\\repos\\Excel-Builder\\ConsoleApp1\\ConsoleApp1.csproj",
+        "projectUniqueName": "C:\\Users\\samer.shahbaz\\source\\repos\\ExcelUtility\\ConsoleApp1\\ConsoleApp1.csproj",
         "projectName": "ConsoleApp1",
-        "projectPath": "C:\\Users\\faisal\\source\\repos\\Excel-Builder\\ConsoleApp1\\ConsoleApp1.csproj",
-        "packagesPath": "C:\\Users\\faisal\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\faisal\\source\\repos\\Excel-Builder\\ConsoleApp1\\obj\\",
+        "projectPath": "C:\\Users\\samer.shahbaz\\source\\repos\\ExcelUtility\\ConsoleApp1\\ConsoleApp1.csproj",
+        "packagesPath": "C:\\Users\\samer.shahbaz\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\samer.shahbaz\\source\\repos\\ExcelUtility\\ConsoleApp1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\faisal\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\samer.shahbaz\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net8.0"
+          "net6.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net8.0": {
-            "targetAlias": "net8.0",
+          "net6.0": {
+            "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\faisal\\source\\repos\\Excel-Builder\\Samer.ExcelBuilder\\GoWorkPro.ExcelBuilder.csproj": {
-                "projectPath": "C:\\Users\\faisal\\source\\repos\\Excel-Builder\\Samer.ExcelBuilder\\GoWorkPro.ExcelBuilder.csproj"
+              "C:\\Users\\samer.shahbaz\\source\\repos\\ExcelUtility\\Samer.ExcelBuilder\\GoWorkPro.ExcelBuilder.csproj": {
+                "projectPath": "C:\\Users\\samer.shahbaz\\source\\repos\\ExcelUtility\\Samer.ExcelBuilder\\GoWorkPro.ExcelBuilder.csproj"
               }
             }
           }
@@ -41,8 +41,8 @@
         }
       },
       "frameworks": {
-        "net8.0": {
-          "targetAlias": "net8.0",
+        "net6.0": {
+          "targetAlias": "net6.0",
           "imports": [
             "net461",
             "net462",
@@ -54,30 +54,51 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.20, 6.0.20]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[6.0.20, 6.0.20]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.20, 6.0.20]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.20, 6.0.20]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\faisal\\source\\repos\\Excel-Builder\\Samer.ExcelBuilder\\GoWorkPro.ExcelBuilder.csproj": {
-      "version": "1.2.0-dev",
+    "C:\\Users\\samer.shahbaz\\source\\repos\\ExcelUtility\\Samer.ExcelBuilder\\GoWorkPro.ExcelBuilder.csproj": {
+      "version": "2.0.1",
       "restore": {
-        "projectUniqueName": "C:\\Users\\faisal\\source\\repos\\Excel-Builder\\Samer.ExcelBuilder\\GoWorkPro.ExcelBuilder.csproj",
+        "projectUniqueName": "C:\\Users\\samer.shahbaz\\source\\repos\\ExcelUtility\\Samer.ExcelBuilder\\GoWorkPro.ExcelBuilder.csproj",
         "projectName": "GoWorkPro.ExcelBuilder",
-        "projectPath": "C:\\Users\\faisal\\source\\repos\\Excel-Builder\\Samer.ExcelBuilder\\GoWorkPro.ExcelBuilder.csproj",
-        "packagesPath": "C:\\Users\\faisal\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\faisal\\source\\repos\\Excel-Builder\\Samer.ExcelBuilder\\obj\\",
+        "projectPath": "C:\\Users\\samer.shahbaz\\source\\repos\\ExcelUtility\\Samer.ExcelBuilder\\GoWorkPro.ExcelBuilder.csproj",
+        "packagesPath": "C:\\Users\\samer.shahbaz\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\samer.shahbaz\\source\\repos\\ExcelUtility\\Samer.ExcelBuilder\\obj\\",
         "projectStyle": "PackageReference",
+        "crossTargeting": true,
         "configFilePaths": [
-          "C:\\Users\\faisal\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\samer.shahbaz\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net5.0"
+          "net5",
+          "net6",
+          "netstandard2.1"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -85,7 +106,15 @@
         },
         "frameworks": {
           "net5.0": {
-            "targetAlias": "net5.0",
+            "targetAlias": "net5",
+            "projectReferences": {}
+          },
+          "net6.0": {
+            "targetAlias": "net6",
+            "projectReferences": {}
+          },
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
             "projectReferences": {}
           }
         },
@@ -97,7 +126,87 @@
       },
       "frameworks": {
         "net5.0": {
-          "targetAlias": "net5.0",
+          "targetAlias": "net5",
+          "dependencies": {
+            "ClosedXML": {
+              "target": "Package",
+              "version": "[0.102.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[5.0.0, 5.0.0]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[5.0.0, 5.0.0]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[5.0.0, 5.0.0]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+        },
+        "net6.0": {
+          "targetAlias": "net6",
+          "dependencies": {
+            "ClosedXML": {
+              "target": "Package",
+              "version": "[0.102.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.20, 6.0.20]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.20, 6.0.20]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.20, 6.0.20]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+        },
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
           "dependencies": {
             "ClosedXML": {
               "target": "Package",
@@ -116,11 +225,11 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
-            "Microsoft.NETCore.App": {
+            "NETStandard.Library": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
         }
       }
     }
