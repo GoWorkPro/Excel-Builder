@@ -5,7 +5,6 @@
     <version>1.1.1</version>
     <title>Excel Builder</title>
     <authors>Samer Shahbaz</authors>
-    <icon>excel-icon.png</icon>
     <readme>README.md</readme>
     <projectUrl>https://goworkpro.github.io/Excel-Builder-Utility/</projectUrl>
     <description>An exceptionally user-friendly tool for effortlessly building Excel sheets. Streamlining the process with simplicity and ease of use, ExcelBuilder empowers users to create professional-grade spreadsheets without the complexity.
@@ -14,7 +13,7 @@ For more information refere to documentation at
 https://goworkpro.github.io/Excel-Builder-Utility/</description>
     <copyright>© 2023 GoWorkPro. All rights reserved. ExcelBuilder is a trademark of GoWorkPro. Unauthorized use or reproduction of this software is prohibited.</copyright>
     <tags>Excel, ClosedXML, Spreadsheet, Utility, C#, .NET, ExcelBuilder, Excel Sheets, Data Management</tags>
-    <repository type="git" url="https://github.com/GoWorkPro/Excel-Builder.git" />
+    <repository type="git" url="https://github.com/GoWorkPro/Excel-Builder.git" commit="d2e6a483a6f0f184646f2636a677d43728b04835" />
     <dependencies>
       <group targetFramework="net5.0">
         <dependency id="ClosedXML" version="0.102.1" exclude="Build,Analyzers" />
@@ -22,8 +21,7 @@ https://goworkpro.github.io/Excel-Builder-Utility/</description>
     </dependencies>
   </metadata>
   <files>
-    <file src="C:\Users\samer.shahbaz\source\repos\ExcelUtility\Samer.ExcelBuilder\bin\Debug\net5.0\GoWorkPro.ExcelBuilder.dll" target="lib\net5.0\GoWorkPro.ExcelBuilder.dll" />
-    <file src="C:\Users\samer.shahbaz\source\repos\ExcelUtility\Samer.ExcelBuilder\README.md" target="\README.md" />
-    <file src="C:\Users\samer.shahbaz\Downloads\excel-icon.png" target="\excel-icon.png" />
+    <file src="C:\Users\faisal\source\repos\Excel-Builder\Samer.ExcelBuilder\bin\Debug\net5.0\GoWorkPro.ExcelBuilder.dll" target="lib\net5.0\GoWorkPro.ExcelBuilder.dll" />
+    <file src="C:\Users\faisal\source\repos\Excel-Builder\Samer.ExcelBuilder\README.md" target="\README.md" />
   </files>
 </package>

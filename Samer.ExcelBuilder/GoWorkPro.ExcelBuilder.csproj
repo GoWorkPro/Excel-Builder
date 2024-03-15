@@ -15,12 +15,19 @@ https://goworkpro.github.io/Excel-Builder-Utility/</Description>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageTags>Excel, ClosedXML, Spreadsheet, Utility, C#, .NET, ExcelBuilder, Excel Sheets, Data Management</PackageTags>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <Version>1.1.1</Version>
+    <Version>1.2.0-dev</Version>
     <Authors>Samer Shahbaz</Authors>
     <RepositoryUrl>https://github.com/GoWorkPro/Excel-Builder.git</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageProjectUrl>https://goworkpro.github.io/Excel-Builder-Utility/</PackageProjectUrl>
+    <ApplicationIcon>excel-icon.ico</ApplicationIcon>
+    <PackageReleaseNotes>Fixed Styles related issues
+Added Styles for Border Color </PackageReleaseNotes>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="excel-icon.ico" />
+  </ItemGroup>
 
   <ItemGroup>
     <None Include="..\..\..\..\Downloads\excel-icon.png">

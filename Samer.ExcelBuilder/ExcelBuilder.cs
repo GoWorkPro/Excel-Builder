@@ -222,7 +222,7 @@ namespace GoWorkPro.ExcelBuilder
         void _parseHtmlInValue(IXLCell targetCell, string sourceValue)
         {
             var supportedHtmlCharacters = new string[] { "<b>", "<u>", "<i>", "<br />", "<br/>", "<br>" };
-            
+
 
             if (supportedHtmlCharacters.Any(character => sourceValue.Contains(character)))
             {
@@ -270,7 +270,7 @@ namespace GoWorkPro.ExcelBuilder
             else
             {
                 // If none of the supported HTML characters found, add the text as it is
-                targetCell.Value =  sourceValue;
+                targetCell.Value = sourceValue;
             }
         }
 
@@ -395,7 +395,7 @@ namespace GoWorkPro.ExcelBuilder
 
         private void _checkAndThrowException(string propertyName)
         {
-            ExcelBuilder._checkAndThrowException(this.IsBuild, propertyName); 
+            ExcelBuilder._checkAndThrowException(this.IsBuild, propertyName);
         }
 
         public void Link(ExcelTable linkTable)
@@ -484,7 +484,10 @@ namespace GoWorkPro.ExcelBuilder
             public XLBorderStyleValues? RightBorder { get; set; }
             public bool AddCellsToSpan { get; set; } = true;
             public bool? AllowCellsToBeBordered { get; set; }
-
+            public XLColor TopBorderColor { get; set; }
+            public XLColor LeftBorderColor { get; set; }
+            public XLColor BottomBorderColor { get; set; }
+            public XLColor RightBorderColor { get; set; }   
             public virtual void UpdateStyleTo(IXLStyle xLStyle)
             {
                 if (AlignmentHorizontal != null)
@@ -500,6 +503,18 @@ namespace GoWorkPro.ExcelBuilder
                 if (BackroundColor != null)
                     xLStyle.Fill.BackgroundColor = BackroundColor;
 
+                if (AllowCellsToBeBordered == true)
+                {
+                    xLStyle.Border.TopBorder = XLBorderStyleValues.Thin;
+                    xLStyle.Border.RightBorder = XLBorderStyleValues.Thin;
+                    xLStyle.Border.BottomBorder = XLBorderStyleValues.Thin;
+                    xLStyle.Border.LeftBorder = XLBorderStyleValues.Thin;
+                    xLStyle.Border.TopBorderColor = XLColor.FromHtml("#D9D9D9");
+                    xLStyle.Border.RightBorderColor = XLColor.FromHtml("#D9D9D9");
+                    xLStyle.Border.BottomBorderColor = XLColor.FromHtml("#D9D9D9");
+                    xLStyle.Border.LeftBorderColor = XLColor.FromHtml("#D9D9D9");
+                }
+
                 if (TopBorder != null)
                     xLStyle.Border.TopBorder = (XLBorderStyleValues)TopBorder;
 
@@ -512,17 +527,17 @@ namespace GoWorkPro.ExcelBuilder
                 if (RightBorder != null)
                     xLStyle.Border.RightBorder = (XLBorderStyleValues)RightBorder;
 
-                if (AllowCellsToBeBordered == true)
-                {
-                    xLStyle.Border.TopBorder = XLBorderStyleValues.Thin;
-                    xLStyle.Border.RightBorder = XLBorderStyleValues.Thin;
-                    xLStyle.Border.BottomBorder = XLBorderStyleValues.Thin;
-                    xLStyle.Border.LeftBorder = XLBorderStyleValues.Thin;
-                    xLStyle.Border.TopBorderColor = XLColor.FromHtml("#D9D9D9");
-                    xLStyle.Border.RightBorderColor = XLColor.FromHtml("#D9D9D9");
-                    xLStyle.Border.BottomBorderColor = XLColor.FromHtml("#D9D9D9");
-                    xLStyle.Border.LeftBorderColor = XLColor.FromHtml("#D9D9D9");
-                }
+
+                if (TopBorderColor != null)
+                    xLStyle.Border.TopBorderColor = TopBorderColor;
+                if (RightBorderColor != null)
+                    xLStyle.Border.RightBorderColor = RightBorderColor;
+                if (BottomBorderColor != null)
+                    xLStyle.Border.BottomBorderColor = BottomBorderColor;
+                if (LeftBorderColor != null)
+                    xLStyle.Border.LeftBorderColor = LeftBorderColor;
+
+
             }
         }
 

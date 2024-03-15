@@ -4756,19 +4756,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\samer.shahbaz\\.nuget\\packages\\": {}
+    "C:\\Users\\faisal\\.nuget\\packages\\": {}
   },
   "project": {
-    "version": "1.1.1",
+    "version": "1.2.0-dev",
     "restore": {
-      "projectUniqueName": "C:\\Users\\samer.shahbaz\\source\\repos\\ExcelUtility\\Samer.ExcelBuilder\\GoWorkPro.ExcelBuilder.csproj",
+      "projectUniqueName": "C:\\Users\\faisal\\source\\repos\\Excel-Builder\\Samer.ExcelBuilder\\GoWorkPro.ExcelBuilder.csproj",
       "projectName": "GoWorkPro.ExcelBuilder",
-      "projectPath": "C:\\Users\\samer.shahbaz\\source\\repos\\ExcelUtility\\Samer.ExcelBuilder\\GoWorkPro.ExcelBuilder.csproj",
-      "packagesPath": "C:\\Users\\samer.shahbaz\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\samer.shahbaz\\source\\repos\\ExcelUtility\\Samer.ExcelBuilder\\obj\\",
+      "projectPath": "C:\\Users\\faisal\\source\\repos\\Excel-Builder\\Samer.ExcelBuilder\\GoWorkPro.ExcelBuilder.csproj",
+      "packagesPath": "C:\\Users\\faisal\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\faisal\\source\\repos\\Excel-Builder\\Samer.ExcelBuilder\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\samer.shahbaz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\faisal\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4810,26 +4810,12 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[5.0.0, 5.0.0]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Ref",
-            "version": "[5.0.0, 5.0.0]"
-          },
-          {
-            "name": "Microsoft.WindowsDesktop.App.Ref",
-            "version": "[5.0.0, 5.0.0]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -10,3 +10,16 @@ C:\Users\samer.shahbaz\source\repos\ExcelUtility\Samer.ExcelBuilder\obj\Debug\ne
 C:\Users\samer.shahbaz\source\repos\ExcelUtility\Samer.ExcelBuilder\obj\Debug\net5.0\refint\GoWorkPro.ExcelBuilder.dll
 C:\Users\samer.shahbaz\source\repos\ExcelUtility\Samer.ExcelBuilder\obj\Debug\net5.0\GoWorkPro.ExcelBuilder.pdb
 C:\Users\samer.shahbaz\source\repos\ExcelUtility\Samer.ExcelBuilder\obj\Debug\net5.0\ref\GoWorkPro.ExcelBuilder.dll
+C:\Users\faisal\source\repos\Excel-Builder\Samer.ExcelBuilder\bin\Debug\net5.0\GoWorkPro.ExcelBuilder.deps.json
+C:\Users\faisal\source\repos\Excel-Builder\Samer.ExcelBuilder\bin\Debug\net5.0\GoWorkPro.ExcelBuilder.dll
+C:\Users\faisal\source\repos\Excel-Builder\Samer.ExcelBuilder\bin\Debug\net5.0\GoWorkPro.ExcelBuilder.pdb
+C:\Users\faisal\source\repos\Excel-Builder\Samer.ExcelBuilder\obj\Debug\net5.0\GoWorkPro.ExcelBuilder.csproj.AssemblyReference.cache
+C:\Users\faisal\source\repos\Excel-Builder\Samer.ExcelBuilder\obj\Debug\net5.0\GoWorkPro.ExcelBuilder.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\faisal\source\repos\Excel-Builder\Samer.ExcelBuilder\obj\Debug\net5.0\GoWorkPro.ExcelBuilder.AssemblyInfoInputs.cache
+C:\Users\faisal\source\repos\Excel-Builder\Samer.ExcelBuilder\obj\Debug\net5.0\GoWorkPro.ExcelBuilder.AssemblyInfo.cs
+C:\Users\faisal\source\repos\Excel-Builder\Samer.ExcelBuilder\obj\Debug\net5.0\GoWorkPro.ExcelBuilder.csproj.CoreCompileInputs.cache
+C:\Users\faisal\source\repos\Excel-Builder\Samer.ExcelBuilder\obj\Debug\net5.0\GoWorkPro.ExcelBuilder.sourcelink.json
+C:\Users\faisal\source\repos\Excel-Builder\Samer.ExcelBuilder\obj\Debug\net5.0\GoWorkPro.ExcelBuilder.dll
+C:\Users\faisal\source\repos\Excel-Builder\Samer.ExcelBuilder\obj\Debug\net5.0\refint\GoWorkPro.ExcelBuilder.dll
+C:\Users\faisal\source\repos\Excel-Builder\Samer.ExcelBuilder\obj\Debug\net5.0\GoWorkPro.ExcelBuilder.pdb
+C:\Users\faisal\source\repos\Excel-Builder\Samer.ExcelBuilder\obj\Debug\net5.0\ref\GoWorkPro.ExcelBuilder.dll
