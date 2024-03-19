@@ -15,7 +15,7 @@ https://goworkpro.github.io/Excel-Builder-Utility/</Description>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageTags>Excel, ClosedXML, Spreadsheet, Utility, C#, .NET, ExcelBuilder, Excel Sheets, Data Management</PackageTags>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <Version>2.1.0-dev</Version>
+    <Version>2.1.1-dev</Version>
     <Authors>Samer Shahbaz</Authors>
     <RepositoryUrl>https://github.com/GoWorkPro/Excel-Builder.git</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
