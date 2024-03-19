@@ -97,7 +97,7 @@ namespace GoWorkPro.ExcelBuilder
                         {
                             var prevTable = builderworksheet.Tables.ElementAt(currentTableIndex - 1);
                             int prevMaxCount = Math.Max(prevTable.Rows.OrderByDescending(x => x.Cells.Count).Select(x => x.Cells.Count).FirstOrDefault(), prevTable.Columns.Count);
-                            cellToAdd = prevMaxCount - table.MaxCellsCount;
+                            cellToAdd = Math.Max(prevMaxCount - table.MaxCellsCount, 0);
                         }
                     }
 
@@ -491,7 +491,7 @@ namespace GoWorkPro.ExcelBuilder
             public XLColor TopBorderColor { get; set; }
             public XLColor LeftBorderColor { get; set; }
             public XLColor BottomBorderColor { get; set; }
-            public XLColor RightBorderColor { get; set; }   
+            public XLColor RightBorderColor { get; set; }
             public virtual void UpdateStyleTo(IXLStyle xLStyle)
             {
                 if (AlignmentHorizontal != null)
