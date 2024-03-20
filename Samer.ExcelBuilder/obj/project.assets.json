@@ -4759,7 +4759,7 @@
     "C:\\Users\\faisal\\.nuget\\packages\\": {}
   },
   "project": {
-    "version": "2.1.1-dev",
+    "version": "2.1.2-dev",
     "restore": {
       "projectUniqueName": "C:\\Users\\faisal\\source\\repos\\Excel-Builder\\Samer.ExcelBuilder\\GoWorkPro.ExcelBuilder.csproj",
       "projectName": "GoWorkPro.ExcelBuilder",

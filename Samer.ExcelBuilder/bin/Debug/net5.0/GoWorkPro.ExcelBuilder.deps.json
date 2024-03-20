@@ -6,7 +6,7 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v5.0": {
-      "GoWorkPro.ExcelBuilder/1.1.1": {
+      "GoWorkPro.ExcelBuilder/2.1.1-dev": {
         "dependencies": {
           "ClosedXML": "0.102.1"
         },
@@ -763,7 +763,7 @@
     }
   },
   "libraries": {
-    "GoWorkPro.ExcelBuilder/1.1.1": {
+    "GoWorkPro.ExcelBuilder/2.1.1-dev": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

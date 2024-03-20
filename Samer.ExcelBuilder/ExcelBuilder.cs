@@ -200,7 +200,7 @@ namespace GoWorkPro.ExcelBuilder
 
         private void _excelCellValue(ExcelTable.ExcelCell sourceCell, IXLCell targetCell, ExcelTable table)
         {
-            if (sourceCell.RichText.HasValue())
+            if (sourceCell.RichText.ContainValue())
             {
                 IXLRichText iXLRichText = targetCell.CreateRichText();
                 {

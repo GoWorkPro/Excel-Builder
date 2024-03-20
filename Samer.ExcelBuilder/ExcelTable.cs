@@ -1,9 +1,13 @@
 ﻿using ClosedXML.Excel;
+using DocumentFormat.OpenXml.Drawing;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
+using System.Text.Json;
 using System.Threading.Tasks;
+using System.Xml.Serialization;
 
 namespace GoWorkPro.ExcelBuilder
 {
@@ -203,24 +207,52 @@ namespace GoWorkPro.ExcelBuilder
             }
         }
 
-        public class CellStyle : ExcelStyle
+        public class CellStyle : ExcelStyle, ICloneable
         {
             public virtual int Colspan { get; set; }
 
             public virtual int Rowspan { get; set; }
 
             public bool IsWrapped { get; set; } = true;
-
+            internal bool InMergeCell { get; set; } = false;
 
             public CellStyle(bool? allowCellsToBeBordered = null)
             {
                 base.AllowCellsToBeBordered = allowCellsToBeBordered;
             }
 
+
             public override void UpdateStyleTo(IXLStyle xLStyle)
             {
                 base.UpdateStyleTo(xLStyle);
                 xLStyle.Alignment.WrapText = IsWrapped;
+            }
+
+            public object Clone()
+            {
+                return new CellStyle
+                {
+                    InMergeCell = InMergeCell,
+                    Rowspan = Rowspan,
+                    AddCellsToSpan = AddCellsToSpan,
+                    AlignmentHorizontal = AlignmentHorizontal,
+                    AlignmentVertical = AlignmentVertical,
+                    AllowCellsToBeBordered = AllowCellsToBeBordered,
+                    BackgroundColor = BackgroundColor,
+                    BottomBorder = BottomBorder,
+                    BottomBorderColor = BottomBorderColor,
+                    Colspan = Colspan,
+                    FontBold = FontBold,
+                    FontColor = FontColor,
+                    FontSize = FontSize,
+                    IsWrapped = IsWrapped,
+                    LeftBorder = LeftBorder,
+                    LeftBorderColor = LeftBorderColor,
+                    RightBorder = RightBorder,
+                    RightBorderColor = RightBorderColor,
+                    TopBorder = TopBorder,
+                    TopBorderColor = TopBorderColor
+                };
             }
         }
 
@@ -318,7 +350,7 @@ namespace GoWorkPro.ExcelBuilder
                 _values = new List<RichTextValue>();
             }
 
-            public bool HasValue()
+            public bool ContainValue()
             {
                 return _values.Any();
             }

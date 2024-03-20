@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DocumentFormat.OpenXml.Spreadsheet;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -34,7 +35,7 @@ namespace GoWorkPro.ExcelBuilder
             }
         }
 
-        public static void AddCell(this ExcelTable.ExcelRow row, string value, ExcelTable.CellStyle cellStyle)
+        public static void AddCell(this ExcelRow row, string value, ExcelTable.CellStyle cellStyle)
         {
             row.Cells.Add(new ExcelTable.ExcelCell
             {
@@ -45,7 +46,7 @@ namespace GoWorkPro.ExcelBuilder
             {
                 for (int i = 0; i < cellStyle.Colspan - 1; i++)
                 {
-                    row.AddCell();
+                    InMergeCell(row, (ExcelTable.CellStyle)cellStyle.Clone());
                 }
             }
         }
@@ -57,7 +58,7 @@ namespace GoWorkPro.ExcelBuilder
             {
                 for (int i = 0; i < cell.CellStyle.Colspan - 1; i++)
                 {
-                    row.AddCell();
+                    row.Cells.Add(new ExcelCell { CellStyle = cell.CellStyle });
                 }
             }
         }
@@ -75,6 +76,14 @@ namespace GoWorkPro.ExcelBuilder
         public static void AddCell(this ExcelTable.ExcelRow row, string value = "")
         {
             row.AddCell(value, new ExcelTable.CellStyle());
+        }
+
+        public static void InMergeCell(this ExcelTable.ExcelRow row, ExcelTable.CellStyle cellStyle)
+        {
+            cellStyle.InMergeCell = true;
+            cellStyle.Rowspan = 0;
+            cellStyle.Colspan = 0;
+            row.Cells.Add(new ExcelCell("") { CellStyle = cellStyle });
         }
 
         public static ExcelTable.ExcelRow Add(this ICollection<ExcelTable.ExcelRow> rows, params string[] cellsValue)
