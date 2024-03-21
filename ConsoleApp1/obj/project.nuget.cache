@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "ZmCuq8COA5nQD/AnZHpqbppS/hYIiCuikEbCwxyVSOHt5gsUVx/+K0As1aMUHe1tSEvLFJwc+mKA4mhsKUrZ3A==",
+  "dgSpecHash": "hXG1w8xva8+RrPzaWJls3vc47Q8RyP0gkDhT1EIwdMXCAr59MUDGpK4wbBAJgrshlqSOyCmxHEsDrS8vA8KPWg==",
   "success": true,
   "projectFilePath": "C:\\Users\\faisal\\source\\repos\\Excel-Builder\\ConsoleApp1\\ConsoleApp1.csproj",
   "expectedPackageFiles": [
@@ -114,7 +114,7 @@
     "C:\\Users\\faisal\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\faisal\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
     "C:\\Users\\faisal\\.nuget\\packages\\xlparser\\1.5.2\\xlparser.1.5.2.nupkg.sha512",
-    "C:\\Users\\faisal\\.nuget\\packages\\goworkpro.excelbuilder\\2.1.0-dev\\goworkpro.excelbuilder.2.1.0-dev.nupkg.sha512"
+    "C:\\Users\\faisal\\.nuget\\packages\\goworkpro.excelbuilder\\2.1.2-dev\\goworkpro.excelbuilder.2.1.2-dev.nupkg.sha512"
   ],
   "logs": []
 }

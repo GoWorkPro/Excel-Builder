@@ -2139,7 +2139,7 @@
           "lib/netstandard1.6/XLParser.dll": {}
         }
       },
-      "GoWorkPro.ExcelBuilder/2.1.0-dev": {
+      "GoWorkPro.ExcelBuilder/2.1.2-dev": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
@@ -6330,7 +6330,7 @@
         "xlparser.nuspec"
       ]
     },
-    "GoWorkPro.ExcelBuilder/2.1.0-dev": {
+    "GoWorkPro.ExcelBuilder/2.1.2-dev": {
       "type": "project",
       "path": "../Samer.ExcelBuilder/GoWorkPro.ExcelBuilder.csproj",
       "msbuildProject": "../Samer.ExcelBuilder/GoWorkPro.ExcelBuilder.csproj"
@@ -6339,7 +6339,7 @@
   "projectFileDependencyGroups": {
     "net6.0": [
       "BarCode >= 2024.3.2",
-      "GoWorkPro.ExcelBuilder >= 2.1.0-dev"
+      "GoWorkPro.ExcelBuilder >= 2.1.2-dev"
     ]
   },
   "packageFolders": {
