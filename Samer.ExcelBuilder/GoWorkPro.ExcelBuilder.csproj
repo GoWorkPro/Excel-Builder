@@ -15,14 +15,13 @@ https://goworkpro.github.io/Excel-Builder-Utility/</Description>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageTags>Excel, ClosedXML, Spreadsheet, Utility, C#, .NET, ExcelBuilder, Excel Sheets, Data Management</PackageTags>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <Version>2.1.2-dev</Version>
+    <Version>2.2.0</Version>
     <Authors>Samer Shahbaz</Authors>
     <RepositoryUrl>https://github.com/GoWorkPro/Excel-Builder.git</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageProjectUrl>https://goworkpro.github.io/Excel-Builder-Utility/</PackageProjectUrl>
     <ApplicationIcon>excel-icon.ico</ApplicationIcon>
-    <PackageReleaseNotes>Fixed Styles related issues
-Added Styles for Border Color </PackageReleaseNotes>
+    <PackageReleaseNotes>Added feature for columns frozen</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
