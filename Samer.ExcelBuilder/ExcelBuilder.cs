@@ -315,6 +315,11 @@ namespace GoWorkPro.ExcelBuilder
                         {
                             iXLWorksheet.Column(column.ColumnNumber).Width = column.ColumnStyle.Width;
                         }
+
+                        if (column.IsFrozen)
+                        {
+                            iXLWorksheet.SheetView.FreezeColumns(column.ColumnNumber);
+                        }
                     }
                 }
             }

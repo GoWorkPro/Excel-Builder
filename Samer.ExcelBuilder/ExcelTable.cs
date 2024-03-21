@@ -71,6 +71,12 @@ namespace GoWorkPro.ExcelBuilder
             public int ColumnNumber { get; internal set; }
 
             public int SpannedLastColumnNumber { get; internal set; }
+            public bool IsFrozen { get; internal set; }
+
+            public void Freeze()
+            {
+                IsFrozen = true;
+            }
 
             public ExcelColumn(string columnName, string actualColumnName)
             {
